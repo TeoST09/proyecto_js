@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto JS</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <div class="page-shell">
+        <h1 class="page-title">Proyecto de JavaScript Moderno</h1>
+
+        <div class="project">
+            <header class="project__header">
+                <div class="project__brand">PROYECTO JS</div>
+
+                <nav class="project__nav" aria-label="Navegación principal">
+                    <ul class="nav__list">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Reloj</a></li>
+                        <li><a href="#">Sobre mi</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section class="slider" aria-label="Galería de imágenes">
+                <button class="slider__arrow slider__arrow--prev" type="button" aria-label="Anterior">◀</button>
+                <button class="slider__arrow slider__arrow--next" type="button" aria-label="Siguiente">▶</button>
+                <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=1200&q=80" alt="Hojas verdes con gotas de agua">
+            </section>
+
+            <div class="project__content">
+                <main class="articles">
+                    <article class="post">
+                        <h2>Articulo 1</h2>
+                        <p class="post__meta"></p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sodales vitae quam sed lacinia.
+                            Integer ac augue vel posuere laoreet. In turpis mauris, tincidunt sit amet lectus non, tristique molestie dui.
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        </p>
+                        <a href="#" class="post__button">Leer Mas</a>
+                    </article>
+
+                    <article class="post">
+                        <h2>Articulo 2</h2>
+                        <p class="post__meta"></p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sodales vitae quam sed lacinia.
+                            Integer ac augue vel posuere laoreet. In turpis mauris, tincidunt sit amet lectus non, tristique molestie dui.
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        </p>
+                        <a href="#" class="post__button">Leer Mas</a>
+                    </article>
+
+                    <article class="post">
+                        <h2>Articulo 3</h2>
+                        <p class="post__meta"></p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sodales vitae quam sed lacinia.
+                            Integer ac augue vel posuere laoreet. In turpis mauris, tincidunt sit amet lectus non, tristique molestie dui.
+                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                        </p>
+                        <a href="#" class="post__button">Leer Mas</a>
+                    </article>
+                </main>
+
+                <aside class="sidebar">
+                    <div class="about">
+                        <h3>¿Quien soy?</h3>
+                        <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=900&q=80" alt="Caracol sobre madera">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sodales vitae quam sed lacinia.
+                            Integer ac augue vel posuere laoreet. In turpis mauris, tincidunt sit amet lectus non, tristique molestie dui.
+                        </p>
+                    </div>
+
+                    <form class="sidebar__form">
+                        <p class="form__title">Identificate</p>
+
+                        <label>
+                            Nombre:
+                            <input type="text" name="nombre">
+                        </label>
+
+                        <label>
+                            Correo:
+                            <input type="email" name="correo">
+                        </label>
+
+                        <label>
+                            Contraseña:
+                            <input type="password" name="password">
+                        </label>
+
+                        <button type="submit">Entrar</button>
+                    </form>
+                </aside>
+            </div>
+
+            <footer class="project__footer">
+                <p>Todos los derechos reservados a Mateo López</p>
+                <a href="#">Ir arriba</a>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
