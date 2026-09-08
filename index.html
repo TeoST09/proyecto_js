@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto JS</title>
-    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/slider.js" defer></script>
+    <script src="scripts/articles.js" defer></script>
 </head>
 <body>
     <div class="page-shell">
@@ -27,44 +28,14 @@
             </header>
 
             <section class="slider" aria-label="Galería de imágenes">
-                <button class="slider__arrow slider__arrow--prev" type="button" aria-label="Anterior">◀</button>
-                <button class="slider__arrow slider__arrow--next" type="button" aria-label="Siguiente">▶</button>
-                <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?auto=format&fit=crop&w=1200&q=80" alt="Hojas verdes con gotas de agua">
+                <button id="slider_left" class="slider__arrow slider__arrow--prev" type="button" aria-label="Anterior">◀</button>
+                <button id="slider_right" class="slider__arrow slider__arrow--next" type="button" aria-label="Siguiente">▶</button>
+                <img id="slider_image" alt="Imagen del slider">
             </section>
 
             <div class="project__content">
                 <main class="articles">
-                    <article class="post">
-                        <h2>Articulo 1</h2>
-                        <p class="post__meta"></p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sodales vitae quam sed lacinia.
-                            Integer ac augue vel posuere laoreet. In turpis mauris, tincidunt sit amet lectus non, tristique molestie dui.
-                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                        </p>
-                        <a href="#" class="post__button">Leer Mas</a>
-                    </article>
-
-                    <article class="post">
-                        <h2>Articulo 2</h2>
-                        <p class="post__meta"></p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sodales vitae quam sed lacinia.
-                            Integer ac augue vel posuere laoreet. In turpis mauris, tincidunt sit amet lectus non, tristique molestie dui.
-                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                        </p>
-                        <a href="#" class="post__button">Leer Mas</a>
-                    </article>
-
-                    <article class="post">
-                        <h2>Articulo 3</h2>
-                        <p class="post__meta"></p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sodales vitae quam sed lacinia.
-                            Integer ac augue vel posuere laoreet. In turpis mauris, tincidunt sit amet lectus non, tristique molestie dui.
-                            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                        </p>
-                        <a href="#" class="post__button">Leer Mas</a>
+                    <article id="post" class="post">
                     </article>
                 </main>
 
