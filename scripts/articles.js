@@ -15,13 +15,13 @@ let post = [
 
 post.forEach(article => {
     const titulo = document.createElement('h2');
-    titulo.textContent = article.title;
+    titulo.textContent = article.title
 
     const parrafo = document.createElement('p');
-    parrafo.textContent = article.parrafo;
+    parrafo.textContent = article.parrafo
 
     const anio = document.createElement('span');
-    anio.textContent = article.date;
+    anio.textContent = article.date
 
     arti.appendChild(titulo)
     arti.appendChild(parrafo)

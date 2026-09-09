@@ -6,11 +6,9 @@
     <title>Proyecto JS</title>
     <link rel="stylesheet" href="style.css">
     <script src="scripts/main.js" defer></script>
-    <script src="scripts/slider.js" defer></script>
-    <script src="scripts/articles.js" defer></script>
     <script src="scripts/login.js" defer></script>
 </head>
-<body>
+<body class="sobre-mi-page">
     <div class="page-shell">
         <h1 class="page-title">Proyecto de JavaScript Moderno</h1>
 
@@ -28,17 +26,42 @@
                 </nav>
             </header>
 
-            <section class="slider" aria-label="Galería de imágenes">
-                <button id="slider_left" class="slider__arrow slider__arrow--prev" type="button" aria-label="Anterior">◀</button>
-                <button id="slider_right" class="slider__arrow slider__arrow--next" type="button" aria-label="Siguiente">▶</button>
-                <img id="slider_image" alt="Imagen del slider">
-            </section>
 
             <div class="project__content">
                 <main class="articles">
-                    <article id="post" class="post">
-                    </article>
-                </main>
+                <article id="post" class="post sobre-mi">
+                    <h1 class="sobre-mi__title">Sobre mi</h1>
+
+                    <div class="sobre-mi__accordion" id="acordeon">
+                        <details>
+                            <summary>¿Quienes somos?</summary>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea rerum praesentium fugit.
+                                Minima explicabo iure dolorem commodi ut eos iusto, impedit, mollitia architecto laboriosam,
+                                corrupti beatae assumenda ipsum corporis repellendus!
+                            </p>
+                        </details>
+
+                        <details>
+                            <summary>Nuestros servicios</summary>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea rerum praesentium fugit.
+                                Minima explicabo iure dolorem commodi ut eos iusto, impedit, mollitia architecto laboriosam,
+                                corrupti beatae assumenda ipsum corporis repellendus!
+                            </p>
+                        </details>
+
+                        <details>
+                            <summary>¿Que dicen nuestros clientes?</summary>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea rerum praesentium fugit.
+                                Minima explicabo iure dolorem commodi ut eos iusto, impedit, mollitia architecto laboriosam,
+                                corrupti beatae assumenda ipsum corporis repellendus!
+                            </p>
+                        </details>
+                    </div>
+                </article>
+            </main>
 
                 <aside class="sidebar">
                     <div class="about">

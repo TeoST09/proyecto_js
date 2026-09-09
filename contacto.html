@@ -6,9 +6,9 @@
     <title>Proyecto JS</title>
     <link rel="stylesheet" href="style.css">
     <script src="scripts/main.js" defer></script>
-    <script src="scripts/slider.js" defer></script>
-    <script src="scripts/articles.js" defer></script>
     <script src="scripts/login.js" defer></script>
+    <script src="scripts/contacto.js" defer></script>
+    <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
 </head>
 <body>
     <div class="page-shell">
@@ -28,15 +28,39 @@
                 </nav>
             </header>
 
-            <section class="slider" aria-label="Galería de imágenes">
-                <button id="slider_left" class="slider__arrow slider__arrow--prev" type="button" aria-label="Anterior">◀</button>
-                <button id="slider_right" class="slider__arrow slider__arrow--next" type="button" aria-label="Siguiente">▶</button>
-                <img id="slider_image" alt="Imagen del slider">
-            </section>
+            
 
             <div class="project__content">
                 <main class="articles">
-                    <article id="post" class="post">
+                    <article class="post contacto">
+                        <h2 class="contacto__title">Contacto</h2>
+
+                        <form class="contacto__form" id="form_contact" action="#" method="post">
+                            <label for="contacto-nombre">Nombre</label>
+                            <input id="contacto-nombre" name="nombre" type="text" required>
+
+                            <label for="contacto-apellidos">Apellidos</label>
+                            <input id="contacto-apellidos" name="apellidos" type="text" required>
+
+                            <label for="contacto-email">Email</label>
+                            <input id="contacto-email" name="email" type="email" required>
+
+                            <label for="contacto-genero">Género</label>
+                            <select id="contacto-genero" name="genero">
+                                <option value="">Selecciona una opción</option>
+                                <option value="hombre">Hombre</option>
+                                <option value="mujer">Mujer</option>
+                                <option value="otro">Otro</option>
+                            </select>
+
+                            <label for="contacto-nacimiento">Fecha de nacimiento</label>
+                            <input id="contacto-nacimiento" name="fecha-nacimiento" type="date">
+
+                            <label for="contacto-edad">Edad</label>
+                            <input id="contacto-edad" name="edad" type="number" min="1" max="120">
+
+                            <button type="submit">Enviar</button>
+                        </form>
                     </article>
                 </main>
 
@@ -75,7 +99,7 @@
 
             <div class="aside__data hidden">
                 <p id="mostrarNombre"></p>
-                <button id="cerrarSesion">Cerrar Sesión</button>
+                <button id="cerrarSesion" >Cerrar Sesión</button>
             </div>
 
             <footer class="project__footer">
